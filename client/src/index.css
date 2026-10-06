@@ -515,3 +515,33 @@ h2 {
     font-size: 22px;
   }
 }
+
+/* App.css */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  min-width: 32px;
+  height: 32px;
+  border: 1px solid #dcdfe6;
+  background-color: #ffffff;
+  color: #606266;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.pagination button.active {
+  background-color: #1890ff;
+  color: #ffffff;
+  border-color: #1890ff;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
